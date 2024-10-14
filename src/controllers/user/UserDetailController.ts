@@ -4,7 +4,7 @@ import { UserDetailService } from "../../services/user/UserDetailService";
 class UserDetailController {
   async handle(request: Request, response: Response) {
     const userDetailService = new UserDetailService();
-    const userDetail = await userDetailService.execute();
+    const userDetail = await userDetailService.execute(request.user_id);
     return response.json(userDetail);
   }
 }
