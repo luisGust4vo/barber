@@ -1,6 +1,6 @@
-import { UserServiceRequest } from "../../dtos/CreateUser.dto";
+import { UserServiceRequest } from "../../dtos/user.dtos/CreateUser.dto";
 import prismaClient from "../../prisma";
-import { userSchema } from "../../schemas/user.schemas";
+import { userSchema } from "../../schemas/user.schema/user.schemas";
 import { hash } from "bcryptjs";
 
 class CreateUserService {

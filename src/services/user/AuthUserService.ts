@@ -1,6 +1,6 @@
 import prismaClient from "../../prisma";
-import { AuthUserRequest } from "../../dtos/AuthUser.dto";
-import { userSchema } from "../../schemas/authUser.schemas";
+import { AuthUserRequest } from "../../dtos/user.dtos/AuthUser.dto";
+import { userSchema } from "../../schemas/user.schema/authUser.schemas";
 import { compare } from "bcryptjs";
 import { sign } from "jsonwebtoken";
 
