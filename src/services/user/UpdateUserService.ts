@@ -1,4 +1,4 @@
-import { UpdateUser } from "../../dtos/UpdateUser.dto";
+import { UpdateUser } from "../../dtos/user.dtos/UpdateUser.dto";
 import prismaClient from "../../prisma";
 
 class UpdateUserService {
