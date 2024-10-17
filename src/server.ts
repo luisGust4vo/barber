@@ -1,7 +1,7 @@
 import express, { Response, Request, NextFunction } from "express";
 import "express-async-errors";
 import cors from "cors";
-import { router } from "./routes";
+import { router } from "./index";
 
 const app = express();
 const port = 3333;
