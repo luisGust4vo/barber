@@ -20,7 +20,6 @@ class CreateHaircutService {
         subscriptions: true,
       },
     });
-    console.log(user.subscriptions.status);
     if (myHaircuts >= 3 && user?.subscriptions?.status !== "active") {
       throw new Error("Not create haircut");
     }
